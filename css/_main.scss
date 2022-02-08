@@ -1,0 +1,44 @@
+.introduction {
+    @include flex(row, space-between);
+    position: absolute;
+    top: 750%;
+}
+
+.secondary__menu {
+    width: 100%;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: $secondary_menu-text;
+}
+
+.secondary__menu li {
+    text-align: end;
+    margin: 0 5%;
+    padding: 3% 7%;
+    border-right: 2px solid $border_color;
+}
+
+.special {
+    background: $menu_color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover:hover {
+    color: $hover;
+    cursor: pointer;
+}
+
+// ***************************************************** 
+
+.secondary__heading {
+    margin: 6% 0 4% 2%;
+    font-size: 2.1rem;
+}
+
+.description {
+    text-align: justify;
+    margin: 0 10% 5% 5%;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
