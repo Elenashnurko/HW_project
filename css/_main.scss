@@ -1,22 +1,29 @@
+// CONTENT IN MIDDLE BOXES 
 .main {
     position: absolute;
     top: 115%;
+    padding: 0% 6%;
 }
 
-.introduction {
+.main__heading {
+    padding: 8% 0 6%;
+    font-size: 1.875rem
+}
+
+.main__introduction {
     @include flex(row, space-between);
     // position: absolute;
     top: 750%;
 }
 
-.secondary__menu {
+.main__menu {
     width: 100%;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2.375rem;
     color: $secondary_menu-text;
 }
 
-.secondary__menu li {
+.main__menu li {
     text-align: end;
     margin: 0 5%;
     padding: 3% 7%;
@@ -34,16 +41,60 @@
     cursor: pointer;
 }
 
-// ***************************************************** 
-
-.secondary__heading {
-    margin: 6% 0 4% 2%;
-    font-size: 2.1rem;
-}
-
-.description {
+.main__description {
     text-align: justify;
     margin: 0 10% 5% 5%;
-    font-size: 1.1rem;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.875rem;
+}
+
+// ***************************************************** 
+
+.main__item--secondary {
+    padding: 3% 0% 1%;
+    font-size: 0.875rem;
+}
+
+.main__heading--special {
+    color: $hover;
+    padding: 0% 0% 3%;
+    font-size: 2.2rem;
+}
+
+.main__content {
+    @include flex(row, space-between);
+    flex-wrap: wrap;
+}
+
+.main__content--item {
+    width: $size / 3;
+}
+
+.main__content--icon {
+    width: 16%;
+    background-color: $text_color;
+    border-radius: 20%;
+    margin: 1% 1% 1% 0%;
+}
+
+.main__content--image {
+    margin: 8%;
+}
+
+.main__content--heading {
+    color: $content_heading;
+    font-size: 1.375rem;
+    padding: 5% 15% 3% 0%;
+    line-height: 1.625rem;
+}
+
+.content__special {
+    padding: 0% 0% 5% 0%;
+    line-height: 1.625rem;
+}
+
+.content {
+    text-align: justify;
+    padding: 0% 12% 5% 0%;
+    line-height: 1.625rem;
 }

@@ -10,8 +10,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
 }
 
@@ -25,38 +24,25 @@ body {
 }
 
 .header,
-.upper__menu,
-.lower__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.header__upper--menu,
+.header__lower--menu {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header {
-  padding: 50px 60px 0px;
+  padding: 3% 6% 0%;
 }
 
 .header__menu {
   width: 40%;
 }
 
-.upper__menu {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.header__upper--menu {
+  align-items: center;
+  justify-content: space-between;
 }
 
 .telephone {
@@ -65,8 +51,8 @@ body {
 
 .letter,
 .special__letter {
-  font-size: 0.8rem;
   font-weight: bold;
+  font-size: 0.75rem;
 }
 
 .special__letter {
@@ -75,7 +61,7 @@ body {
   border-radius: 20%;
 }
 
-.lower__menu {
+.header__lower--menu {
   padding: 3% 0 0 20%;
   font-weight: bold;
 }
@@ -89,60 +75,60 @@ body {
   height: 100%;
 }
 
-.main__heading {
+.header__heading {
   position: absolute;
   width: 800px;
   height: 46px;
-  left: calc(97% - 800px/2);
+  left: calc(94% - 800px/2);
   top: calc(55% - 46px/2);
   font-style: normal;
   font-weight: bold;
-  font-size: 2.3rem;
-  line-height: 46px;
+  font-size: 2.2rem;
+  line-height: 2.875rem;
   text-align: center;
 }
 
-.button {
+.header__button {
   position: absolute;
   width: 42px;
   height: 42px;
   left: calc(90% - 42px/2);
   bottom: 30px;
   top: 100%;
+  display: inline-block;
 }
 
-.button:hover {
-  color: #F0145A;
+.header__button:hover {
+  background: url(../img/red_button.svg) no-repeat;
   cursor: pointer;
 }
 
 .main {
   position: absolute;
   top: 115%;
+  padding: 0% 6%;
 }
 
-.introduction {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.main__heading {
+  padding: 8% 0 6%;
+  font-size: 1.875rem;
+}
+
+.main__introduction {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   top: 750%;
 }
 
-.secondary__menu {
+.main__menu {
   width: 100%;
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 2.375rem;
   color: #B3B3BA;
 }
 
-.secondary__menu li {
+.main__menu li {
   text-align: end;
   margin: 0 5%;
   padding: 3% 7%;
@@ -160,15 +146,60 @@ body {
   cursor: pointer;
 }
 
-.secondary__heading {
-  margin: 6% 0 4% 2%;
-  font-size: 2.1rem;
-}
-
-.description {
+.main__description {
   text-align: justify;
   margin: 0 10% 5% 5%;
-  font-size: 1.1rem;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.875rem;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.main__item--secondary {
+  padding: 3% 0% 1%;
+  font-size: 0.875rem;
+}
+
+.main__heading--special {
+  color: #F0145A;
+  padding: 0% 0% 3%;
+  font-size: 2.2rem;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main__content--item {
+  width: 33.3333333333%;
+}
+
+.main__content--icon {
+  width: 16%;
+  background-color: #FFFFFF;
+  border-radius: 20%;
+  margin: 1% 1% 1% 0%;
+}
+
+.main__content--image {
+  margin: 8%;
+}
+
+.main__content--heading {
+  color: #24A3FF;
+  font-size: 1.375rem;
+  padding: 5% 15% 3% 0%;
+  line-height: 1.625rem;
+}
+
+.content__special {
+  padding: 0% 0% 5% 0%;
+  line-height: 1.625rem;
+}
+
+.content {
+  text-align: justify;
+  padding: 0% 12% 5% 0%;
+  line-height: 1.625rem;
+}/*# sourceMappingURL=styles.css.map */
