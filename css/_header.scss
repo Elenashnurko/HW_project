@@ -4,6 +4,7 @@ body {
     color: $text_color;
     font-family: $font;
     font-size: 1rem;
+    height: 100vh;
 }
 
 .header,
@@ -61,8 +62,8 @@ body {
     position: absolute;
     width: 800px;
     height: 46px;
-    left: calc(50.3% - 800px/2);
-    top: calc(350% - 46px/2);
+    left: calc(97% - 800px/2);
+    top: calc(55% - 46px/2);
     font-style: normal;
     font-weight: bold;
     font-size: 2.3rem;
@@ -74,9 +75,9 @@ body {
     position: absolute;
     width: 42px;
     height: 42px;
-    left: calc(48% - 42px/2);
+    left: calc(90% - 42px/2);
     bottom: 30px;
-    top: 650%;
+    top: 100%;
 }
 
 .button:hover {

@@ -1,6 +1,11 @@
+.main {
+    position: absolute;
+    top: 115%;
+}
+
 .introduction {
     @include flex(row, space-between);
-    position: absolute;
+    // position: absolute;
     top: 750%;
 }
 
