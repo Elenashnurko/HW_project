@@ -27,7 +27,11 @@ body {
 
     }
 
-    .header__lower--item {}
+    .header__lower--item {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
 
     .toggle {
         display: block;
@@ -46,7 +50,7 @@ body {
         opacity: 1;
     }
 
-    .header__menu:hover .header__lower--menu {
+    .header__menu .header__lower--menu:hover .header__lower--item {
         width: 68vw;
         left: 16vw;
         top: 0;
