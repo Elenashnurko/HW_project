@@ -9,27 +9,74 @@ body {
     height: 100vh;
 }
 
-.wrapper {
-    margin: 0 auto;
-}
 
 @media screen and (min-width: 720px) {
-    .wrapper {
+    .container {
         width: 100%
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .wrapper {
-        width: 76%
+@media only screen and (max-width: 720px) {
+    .header__lower--menu {
+        display: none;
+        opacity: 0;
+        width: 91vw;
+        position: relative;
+        z-index: 1;
+        right: 0;
+
+    }
+
+    .header__lower--item {}
+
+    .toggle {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #toggle {
+        display: none;
+        opacity: 1;
+    }
+
+    #toggle:checked~.header__menu {
+        display: block;
+        opacity: 1;
+    }
+
+    .header__menu:hover .header__lower--menu {
+        width: 68vw;
+        left: 16vw;
+        top: 0;
+        opacity: 1;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .toggle:after {
+        content: '';
+        display: block;
+        width: 6vw;
+        height: 5vw;
+        margin: 2vw;
+        background: url('../img/Hamburger.svg') no-repeat;
+        background-size: cover;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .wrapper {
-        width: 100%
-    }
-}
+// @media screen and (min-width: 1000px) {
+//     .container {
+//         width: 76%
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .container {
+//         width: 100%
+//     }
+// }
 
 // HEADER 
 
@@ -47,6 +94,7 @@ body {
 
 .header__menu {
     width: 40%;
+    position: relative;
 }
 
 .header__upper--menu {
@@ -70,9 +118,20 @@ body {
     border-radius: 20%;
 }
 
+#toggle,
+.toggle {
+    display: none;
+}
+
+.toggle {
+    z-index: 2;
+}
+
 .header__lower--menu {
     padding: 3% 0 0 20%;
     font-weight: bold;
+    position: relative;
+
 }
 
 .header__symbol {
