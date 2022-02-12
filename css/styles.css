@@ -23,71 +23,11 @@ body {
   height: 100vh;
 }
 
-@media screen and (min-width: 720px) {
-  .container {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 720px) {
-  .header__lower--menu {
-    display: none;
-    opacity: 0;
-    width: 91vw;
-    position: relative;
-    z-index: 1;
-    right: 0;
-  }
-
-  .header__lower--item {
-    display: block;
-    width: 100%;
-    margin: 0;
-  }
-
-  .toggle {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-
-  #toggle {
-    display: none;
-    opacity: 1;
-  }
-
-  #toggle:checked ~ .header__menu {
-    display: block;
-    opacity: 1;
-  }
-
-  .header__menu .header__lower--menu:hover .header__lower--item {
-    width: 68vw;
-    left: 16vw;
-    top: 0;
-    opacity: 1;
-    position: absolute;
-    z-index: 2;
-  }
-
-  .toggle:after {
-    content: "";
-    display: block;
-    width: 6vw;
-    height: 5vw;
-    margin: 2vw;
-    background: url("../img/Hamburger.svg") no-repeat;
-    background-size: cover;
-  }
-}
 .header,
 .header__upper--menu,
 .header__lower--menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -98,7 +38,6 @@ body {
 
 .header__menu {
   width: 40%;
-  position: relative;
 }
 
 .header__upper--menu {
@@ -122,21 +61,78 @@ body {
   border-radius: 20%;
 }
 
-#toggle,
-.toggle {
-  display: none;
-}
-
-.toggle {
-  z-index: 2;
-}
-
 .header__lower--menu {
   padding: 3% 0 0 20%;
   font-weight: bold;
-  position: relative;
 }
 
+.header__lower--menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.5em;
+}
+
+.menu {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.menu:nth-child(n+1):hover {
+  color: #F0145A;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.mobile-menu {
+  position: absolute;
+  right: -20em;
+  top: -10em;
+  width: 1.2em;
+}
+
+.menu-icon {
+  font-size: 3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-flex;
+}
+
+@media screen and (min-width: 768px) {
+  .header,
+.header__upper--menu,
+.header__lower--menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header__lower--menu {
+    flex-direction: row;
+  }
+
+  .menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+  }
+}
 .header__symbol {
   position: absolute;
   left: 25%;

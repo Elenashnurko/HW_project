@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header container">
+
+    <header class="header">
         <div class="header__logo">
             <img src="img/Logo.svg" alt="Company name">
         </div>
@@ -58,34 +60,35 @@
                 </div>
             </div>
             <div class="header__lower--menu">
-                <input type="checkbox" id="toggle" />
-                <label for="toggle" class="toggle" onclick>
-                </label>
-                <div class="header__lower--item">
+                <div class="menu">
                     about us
                     <a href="#"></a>
                 </div>
-                <div class="header__lower--item">
+                <div class="menu">
                     services
                     <a href="#"></a>
                 </div>
-                <div class="header__lower--item">
+                <div class="menu">
                     team
                     <a href="#"></a>
                 </div>
-                <div class="header__lower--item">
+                <div class="menu">
                     publications
                     <a href="#"></a>
                 </div>
-                <div class="header__lower--item">
+                <div class="menu">
                     contact
                     <a href="#"></a>
+                </div>
+                <div class="mobile-menu">
+                    <span class="menu-icon open">&#x2261;</span>
+                    <span class="menu-icon close">&#x2715;</span>
                 </div>
             </div>
         </div>
     </header>
     <!-- *****************************************************************  -->
-    <main class="main container">
+    <main class="main">
         <div class="main__introduction">
             <div class="main__menu">
                 <ul>
@@ -218,11 +221,39 @@
 
 
 
+    <script>
 
 
+        function main() {
+            var menuIconOpen = document.getElementsByClassName("open")[0];
+            var menuIconClose = document.getElementsByClassName("close")[0];
+            var menuItems = document.getElementsByClassName("menu");
 
+            menuIconClose.style.display = "none";
 
+            menuIconOpen.onclick = function () {
+                this.style.display = "none";
+                menuIconClose.style.display = "block";
+                menuDisplay("show", menuItems);
+            };
 
+            menuIconClose.onclick = function () {
+                this.style.display = "none";
+                menuIconOpen.style.display = "block";
+                menuDisplay("hide", menuItems);
+            };
+        }
+
+        function menuDisplay(state, items) {
+            if (state == "show") {
+                for (var i = 1; i < items.length; i++) { items[i].classList.add("show"); }
+            } else {
+                for (var i = 1; i < items.length; i++) {
+                    items[i].classList.remove("show");
+                }
+            }
+        } window.onload = function () { main(); } 
+    </script>
 </body>
 
 </html>
