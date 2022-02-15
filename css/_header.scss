@@ -194,7 +194,7 @@ body {
 
 }
 
-.main__heading {
+.primary__heading {
     position: absolute;
     font-weight: bold;
     font-size: 2.2rem;
@@ -221,9 +221,9 @@ body {
         left: 20%;
     }
 
-    .main__heading {
+    .primary__heading {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 33%;
 
     }
@@ -231,7 +231,7 @@ body {
     .heading__button {
         position: absolute;
         left: 50%;
-        top: 105%;
+        top: 100%;
     }
 }
 
@@ -243,9 +243,9 @@ body {
         width: 80%;
     }
 
-    .main__heading {
+    .primary__heading {
         position: absolute;
-        top: 30%;
+        top: 43%;
         left: 30%;
 
     }
@@ -253,7 +253,7 @@ body {
     .heading__button {
         position: absolute;
         left: 60%;
-        top: 70%;
+        top: 83%;
     }
 
     .general {
@@ -270,16 +270,16 @@ body {
         width: 120%;
     }
 
-    .main__heading {
+    .primary__heading {
         position: absolute;
-        top: 20%;
+        top: 30%;
 
     }
 
     .heading__button {
         position: absolute;
         left: 55%;
-        top: 55%;
+        top: 65%;
     }
 
     .transparent {

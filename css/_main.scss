@@ -53,6 +53,8 @@
 .main__item--secondary {
     padding: 3% 0% 1%;
     font-size: 0.875rem;
+    color: $content_heading;
+    font-weight: bold;
 }
 
 .main__heading--special {
@@ -71,14 +73,14 @@
 }
 
 .main__content--icon {
-    width: 16%;
+    width: 18%;
     background-color: $text_color;
     border-radius: 20%;
     margin: 1% 1% 1% 0%;
 }
 
 .main__content--image {
-    margin: 8%;
+    padding: 8%;
 }
 
 .main__content--heading {
@@ -97,4 +99,144 @@
     text-align: justify;
     padding: 0% 12% 5% 0%;
     line-height: 1.625rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .main__content--icon {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .main__menu,
+    .main__description {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .main__menu li {
+        white-space: nowrap;
+        font-size: 1.9rem;
+        padding-bottom: 8%;
+    }
+
+    .main__heading {
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        top: 100%;
+    }
+
+    .main__introduction {
+        @include flex(column, space-between);
+    }
+
+    .main__menu li {
+        border-right: none;
+        white-space: nowrap;
+        padding: 3% 10% 3% 0%;
+        margin: 0;
+    }
+
+    .main__menu {
+
+        border-bottom: 2px solid $border_color;
+    }
+
+    .main__menu ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+    .main__description {
+        width: 70%;
+        margin: 0;
+    }
+
+    .main__description p {
+        font-size: 1.1875rem;
+
+
+    }
+
+    .main__heading {
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+
+    .main__content {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .main__content--item {
+        width: 40%;
+
+
+    }
+
+    .main__content--image {
+        padding: 6%;
+        width: 90%;
+    }
+
+    .main__heading--special {
+        width: 60%;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .main {
+        top: 80%;
+    }
+
+    .main__menu li {
+        padding: 3%;
+
+    }
+
+    .main__menu ul {
+        font-size: 1.5rem;
+    }
+
+    .main__description {
+        width: 35%;
+    }
+
+    .main__description p {
+        font-size: 1.1875rem;
+    }
+
+    .main__heading {
+        font-size: 1.25rem;
+
+    }
+
+    .main__content {
+        @include flex(column, space-between);
+
+    }
+
+    .main__content--item {
+        width: 40%;
+
+    }
+
+    .main__content--icon {
+        width: 18%;
+    }
+
+    .main__heading--special {
+        width: 40%;
+        font-size: 2rem;
+    }
+
 }

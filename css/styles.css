@@ -233,7 +233,7 @@ body {
   z-index: -1;
 }
 
-.main__heading {
+.primary__heading {
   position: absolute;
   font-weight: bold;
   font-size: 2.2rem;
@@ -258,15 +258,15 @@ body {
     position: absolute;
     left: 20%;
   }
-  .main__heading {
+  .primary__heading {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 33%;
   }
   .heading__button {
     position: absolute;
     left: 50%;
-    top: 105%;
+    top: 100%;
   }
 }
 
@@ -277,15 +277,15 @@ body {
     left: 25%;
     width: 80%;
   }
-  .main__heading {
+  .primary__heading {
     position: absolute;
-    top: 30%;
+    top: 43%;
     left: 30%;
   }
   .heading__button {
     position: absolute;
     left: 60%;
-    top: 70%;
+    top: 83%;
   }
   .general {
     -webkit-box-pack: start;
@@ -301,14 +301,14 @@ body {
     left: 0;
     width: 120%;
   }
-  .main__heading {
+  .primary__heading {
     position: absolute;
-    top: 20%;
+    top: 30%;
   }
   .heading__button {
     position: absolute;
     left: 55%;
-    top: 55%;
+    top: 65%;
   }
   .transparent {
     color: transparent;
@@ -385,6 +385,8 @@ body {
 .main__item--secondary {
   padding: 3% 0% 1%;
   font-size: 0.875rem;
+  color: #24A3FF;
+  font-weight: bold;
 }
 
 .main__heading--special {
@@ -413,14 +415,14 @@ body {
 }
 
 .main__content--icon {
-  width: 16%;
+  width: 18%;
   background-color: #FFFFFF;
   border-radius: 20%;
   margin: 1% 1% 1% 0%;
 }
 
 .main__content--image {
-  margin: 8%;
+  padding: 8%;
 }
 
 .main__content--heading {
@@ -439,5 +441,137 @@ body {
   text-align: justify;
   padding: 0% 12% 5% 0%;
   line-height: 1.625rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .main__content--icon {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main__menu,
+  .main__description {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .main__menu li {
+    white-space: nowrap;
+    font-size: 1.9rem;
+    padding-bottom: 8%;
+  }
+  .main__heading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    top: 100%;
+  }
+  .main__introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__menu li {
+    border-right: none;
+    white-space: nowrap;
+    padding: 3% 10% 3% 0%;
+    margin: 0;
+  }
+  .main__menu {
+    border-bottom: 2px solid #FFFFFF4D;
+  }
+  .main__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 1.7rem;
+    width: 100%;
+  }
+  .main__description {
+    width: 70%;
+    margin: 0;
+  }
+  .main__description p {
+    font-size: 1.1875rem;
+  }
+  .main__heading {
+    font-size: 1.5rem;
+    padding: 3%;
+  }
+  .main__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main__content--item {
+    width: 40%;
+  }
+  .main__content--image {
+    padding: 6%;
+    width: 90%;
+  }
+  .main__heading--special {
+    width: 60%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .main {
+    top: 80%;
+  }
+  .main__menu li {
+    padding: 3%;
+  }
+  .main__menu ul {
+    font-size: 1.5rem;
+  }
+  .main__description {
+    width: 35%;
+  }
+  .main__description p {
+    font-size: 1.1875rem;
+  }
+  .main__heading {
+    font-size: 1.25rem;
+  }
+  .main__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__content--item {
+    width: 40%;
+  }
+  .main__content--icon {
+    width: 18%;
+  }
+  .main__heading--special {
+    width: 40%;
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
