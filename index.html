@@ -12,82 +12,72 @@
 </head>
 
 <body>
+    <div class="top__content">
+        <header class="header">
+            <div class="header__item general">
 
-    <header class="header">
-        <div class="header__logo">
-            <img src="img/Logo.svg" alt="Company name">
-        </div>
-        <div class="header__symbol">
-            <img src="/img/Symbol.svg" alt="Letter">
-            <h1 class="header__heading">
+                <div class="letter">УК <a href="#"></a></div>
+                <div class="letter">РУС <a href="#"></a></div>
+                <div class="letter active">EN <a href="#"></a></div>
+
+                <div class="dots"><img src="img/Dot separator.svg" alt="Dot"></div>
+                <div class="transparent">Kyiv,
+                    Mechnikova str,
+                    14/1 </div>
+                <div class="dots"><img src="img/Dot separator.svg" alt="Dot"></div>
+
+                <div class="telephone">0800 211 927 </div>
+
+                <div class="dots"><img src="img/Dot separator.svg" alt="Dot"></div>
+                <div class="dots"><img src="img/facebook.svg" alt="Facebook icon"></div>
+            </div>
+            <div class="header__item">
+                <div class="header__logo">
+                    <div>
+                        <img src="img/Logo.svg" alt="Company name">
+                    </div>
+                </div>
+                <nav class="flexmenu ">
+                    <div class="flex">
+                        <div class="menu__item">
+                            about us
+                            <a href="#"></a>
+                        </div>
+                        <div class="menu__item">
+                            services
+                            <a href="#"></a>
+                        </div>
+                        <div class="menu__item">
+                            team
+                            <a href="#"></a>
+                        </div>
+                        <div class="menu__item">
+                            publications
+                            <a href="#"></a>
+                        </div>
+                        <div class="menu__item">
+                            contact
+                            <a href="#"></a>
+                        </div>
+                        <div class="mobile-menu">
+                            <span class="menu-icon open">&#x2261;</span>
+                            <span class="menu-icon close">&#x2715;</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="heading__container">
+            <img class="symbol" src="/img/Symbol.svg" alt="Symbol">
+            <h1 class="main__heading">
                 you legal solutions provider
             </h1>
-            <div class="header__button">
+            <div class="heading__button">
                 <img src="img/button.svg" alt="Button">
             </div>
         </div>
-        <div class="header__menu">
-            <div class="header__upper--menu">
-                <div class="letter">
-                    УК
-                    <a href="#"></a>
-                </div>
-                <div class="letter">
-                    РУС
-                    <a href="#"></a>
-                </div>
-                <div class="special__letter">
-                    EN
-                    <a href="#"></a>
-                </div>
-                <div>
-                    <img src="img/Dot separator.svg" alt="Dot">
-                </div>
-                <div>
-                    Kyiv, Mechnikova str, 14/1
-                </div>
-                <div>
-                    <img src="img/Dot separator.svg" alt="Dot">
-                </div>
-                <div class="telephone">
-                    0800 211 927
-                </div>
-                <div>
-                    <img src="img/Dot separator.svg" alt="Dot">
-                </div>
-                <div>
-                    <img src="img/facebook.svg" alt="Facebook icon">
-                </div>
-            </div>
-            <div class="header__lower--menu">
-                <div class="menu">
-                    about us
-                    <a href="#"></a>
-                </div>
-                <div class="menu">
-                    services
-                    <a href="#"></a>
-                </div>
-                <div class="menu">
-                    team
-                    <a href="#"></a>
-                </div>
-                <div class="menu">
-                    publications
-                    <a href="#"></a>
-                </div>
-                <div class="menu">
-                    contact
-                    <a href="#"></a>
-                </div>
-                <div class="mobile-menu">
-                    <span class="menu-icon open">&#x2261;</span>
-                    <span class="menu-icon close">&#x2715;</span>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- *****************************************************************  -->
+    </div>
+
     <main class="main">
         <div class="main__introduction">
             <div class="main__menu">
@@ -222,12 +212,10 @@
 
 
     <script>
-
-
         function main() {
             var menuIconOpen = document.getElementsByClassName("open")[0];
             var menuIconClose = document.getElementsByClassName("close")[0];
-            var menuItems = document.getElementsByClassName("menu");
+            var menuItems = document.getElementsByClassName("menu__item");
 
             menuIconClose.style.display = "none";
 
@@ -246,14 +234,24 @@
 
         function menuDisplay(state, items) {
             if (state == "show") {
-                for (var i = 1; i < items.length; i++) { items[i].classList.add("show"); }
+                for (var i = 1; i < items.length; i++) {
+                    items[i].classList.add("show");
+                }
             } else {
                 for (var i = 1; i < items.length; i++) {
                     items[i].classList.remove("show");
                 }
             }
-        } window.onload = function () { main(); } 
+        }
+
+        window.onload = function () {
+            main();
+        }
+
     </script>
+
+
+
 </body>
 
 </html>
