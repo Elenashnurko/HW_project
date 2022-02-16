@@ -2,6 +2,12 @@
 .main {
     position: absolute;
     top: 115%;
+    // padding: 0% 6%;
+    border: 2px solid red;
+}
+
+.main__introduction,
+.main__content {
     padding: 0% 6%;
 }
 
@@ -51,7 +57,7 @@
 // ***************************************************** 
 
 .main__item--secondary {
-    padding: 3% 0% 1%;
+    padding: 3% 6% 1% 6%;
     font-size: 0.875rem;
     color: $content_heading;
     font-weight: bold;
@@ -59,7 +65,7 @@
 
 .main__heading--special {
     color: $hover;
-    padding: 0% 0% 3%;
+    padding: 0% 6% 3% 6%;
     font-size: 2.2rem;
 }
 
@@ -258,25 +264,30 @@
     // max-width: 800px;
     margin: 2% auto;
     background-color: $text_color;
+    border: 2px solid lime;
 
 }
 
 .slider {
-    width: 70%;
+    width: 43%;
     position: absolute;
     height: 0;
-    padding-bottom: 60%;
+    padding-bottom: 90%;
     overflow: hidden;
 
+    height: auto;
+    border: 2px solid orangered;
+    background-color: $text_color;
 }
 
 .slide {
     position: absolute;
-    width: 50%;
+    width: 100%;
+    padding: 6% 4%;
     height: 100%;
     top: 0;
-    left: 0;
     opacity: 0;
+    align-items: center;
 }
 
 .slide img {
@@ -285,6 +296,7 @@
     object-fit: cover;
     transform: scale(1.1);
     transition: 1.3s;
+    border-radius: 5%;
 
 }
 
@@ -296,33 +308,62 @@
     // padding: 5%;
     // top: 5%;
     // bottom: -100%;
-    font-size: 1rem;
+    font-size: 1.875rem;
     transition: 0.9s;
     color: $hover;
     font-weight: bold;
-    background-color: #fff;
+    background-color: $secondary-background;
+    text-align: justify;
+    padding: 6%;
 
 }
 
+.caption__item--hover img {
+    width: 3%;
+}
+
+.caption__item--hover {
+    font-size: 0.875rem;
+    color: $content_heading;
+    font-weight: bold;
+}
+
+.caption__item--bold,
+.caption__item {
+    color: $secondary-text;
+}
+
+.caption__item--bold {
+    font-weight: bold;
+    padding: 8% 0% 4%;
+}
+
+.caption__item {
+    font-size: 0.875rem;
+}
+
 .dot {
-    width: 50%;
+    width: 100%;
     position: absolute;
-    bottom: 5%;
+    top: 98%;
+    // margin: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid blueviolet;
 
 }
 
 .dot label {
-    width: 15px;
-    height: 15px;
-    background: #fff;
+    width: 16px;
+    height: 16px;
+    background: $content_heading;
     margin: 0 1%;
     border-radius: 50%;
     opacity: 0.3;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+
 }
 
 .dot label:hover {
@@ -354,6 +395,14 @@
 #radio-1:checked~.dot #label-1,
 #radio-2:checked~.dot #label-2,
 #radio-3:checked~.dot #label-3 {
-    background: yellow;
+    background: $content_heading;
     opacity: 1;
+}
+
+.add {
+    position: absolute;
+    top: 480%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid yellow;
 }
