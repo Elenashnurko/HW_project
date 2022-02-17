@@ -9,7 +9,31 @@ body {
 
 }
 
+// @media screen and (width: 1920px) {
+//     .wrapper {
+//         max-width: 100%;
+//     }
+// }
 
+// @media screen and (max-width: 1440px) {
+//     .wrapper {
+//         max-width: 80%;
+//     }
+// }
+
+// @media screen and (max-width: 1024px) {
+//     .wrapper {
+//         max-width: 60%;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .wrapper {
+//         max-width: 40%;
+//     }
+// }
+
+// @media screen and (max-width: 412px) {
 @media screen and (max-width: 768px) {
 
     .header__item,
@@ -91,6 +115,8 @@ body {
 
 
 @media screen and (min-width: 768px) {
+
+
     .mobile-menu {
         display: none;
     }
@@ -187,6 +213,11 @@ body {
 // ************************************************* 
 // SYMBOL AND HEADING AND BUTTON 
 
+
+.wrapper {
+    max-width: 100%;
+}
+
 .symbol {
     position: absolute;
     top: 0;
@@ -219,7 +250,7 @@ body {
 @media screen and (max-width: 1024px) {
     .symbol {
         position: absolute;
-        left: 20%;
+        left: 8%;
     }
 
     .primary__heading {
@@ -240,8 +271,9 @@ body {
     .symbol {
         position: absolute;
         top: 0;
-        left: 25%;
+        left: 20%;
         width: 80%;
+        // margin: 10%;
     }
 
     .primary__heading {
@@ -267,8 +299,14 @@ body {
     .symbol {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 120%;
+        left: 10%;
+        // align-items: center;
+        width: 90%;
+        // margin: 0% 5%;
+    }
+
+    .none {
+        display: none;
     }
 
     .primary__heading {
