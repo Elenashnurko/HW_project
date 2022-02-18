@@ -1,9 +1,9 @@
 // CONTENT IN MIDDLE BOXES 
+
 .main {
     position: absolute;
     top: 115%;
-    // padding: 0% 6%;
-    // border: 2px solid red;
+
 }
 
 .main__introduction,
@@ -61,6 +61,7 @@
     font-size: 0.875rem;
     color: $content_heading;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 .main__heading--special {
@@ -103,7 +104,7 @@
 
 .content {
     text-align: justify;
-    padding: 0% 12% 5% 0%;
+    // padding: 0% 5% 5% 0%;
     line-height: 1.625rem;
 }
 
@@ -190,7 +191,7 @@
     }
 
     .main__content--item {
-        width: 40%;
+        width: 50%;
 
 
     }
@@ -242,11 +243,6 @@
 
     }
 
-    .main__content--item {
-        // width: 40%;
-
-    }
-
     .main__content--icon {
         width: 18%;
     }
@@ -254,6 +250,7 @@
     .main__heading--special {
         // width: 40%;
         font-size: 2rem;
+        // padding: 0% 3%;
     }
 
 }
@@ -608,8 +605,25 @@
     .slider {
         width: 100%;
         position: absolute;
-        padding-bottom: 210%;
+        padding-bottom: 230%;
         // height: 140%;
+
+
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        padding: 10% 4%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+        align-items: center;
+
+    }
+
+    .caption {
+        font-size: 2rem;
 
 
     }
@@ -744,7 +758,7 @@
 
 @media screen and (max-width: 412px) {
     .logo {
-        top: 567.5%;
+        top: 554.5%;
     }
 
     .logo_item {

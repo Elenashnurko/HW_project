@@ -49,8 +49,8 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     width: 60%;
-    padding: 3%;
-    font-size: 1.25rem;
+    padding: 1%;
+    font-size: 1rem;
   }
 
   .menu__item:nth-child(2) {
@@ -263,13 +263,15 @@ body {
 
   .primary__heading {
     position: absolute;
-    top: 30%;
+    top: 25%;
+    font-size: 1.9rem;
+    margin: 0 auto;
   }
 
   .heading__button {
     position: absolute;
-    left: 55%;
-    top: 65%;
+    left: 50%;
+    top: 50%;
   }
 
   .transparent {
@@ -348,6 +350,7 @@ body {
   font-size: 0.875rem;
   color: #24A3FF;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .main__heading--special {
@@ -392,7 +395,6 @@ body {
 
 .content {
   text-align: justify;
-  padding: 0% 12% 5% 0%;
   line-height: 1.625rem;
 }
 
@@ -472,7 +474,7 @@ body {
   }
 
   .main__content--item {
-    width: 40%;
+    width: 50%;
   }
 
   .main__content--image {
@@ -812,7 +814,21 @@ body {
   .slider {
     width: 100%;
     position: absolute;
-    padding-bottom: 210%;
+    padding-bottom: 230%;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    padding: 10% 4%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    align-items: center;
+  }
+
+  .caption {
+    font-size: 2rem;
   }
 
   .caption__item--hover img {
@@ -919,7 +935,7 @@ body {
 }
 @media screen and (max-width: 412px) {
   .logo {
-    top: 567.5%;
+    top: 554.5%;
   }
 
   .logo_item {
