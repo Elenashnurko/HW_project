@@ -1,14 +1,4 @@
-body {
-    position: relative;
-    background: $background_color;
-    color: $text_color;
-    font-family: $font;
-    font-size: 1rem;
-    height: 100vh;
-    // margin: 4%;
-
-}
-
+// HEADER STYLES 
 
 @media screen and (max-width: 768px) {
 
@@ -20,8 +10,6 @@ body {
 
     .flexmenu {
         width: 100%;
-        // background-color: #000;
-        // color: #fff;
         line-height: 1.4em;
 
     }
@@ -85,6 +73,7 @@ body {
 
 // *************************************************** 
 
+
 @media screen and (min-width: 768px) {
 
 
@@ -101,93 +90,167 @@ body {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 10vw;
-
+        // width: 20vw;
         font-weight: bold;
+        width: 100%;
 
+    }
+
+    // .link__item {
+
+    //     width: 20vw;
+
+    // }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu__item {
+        // display: inline-flex;
+        // align-items: center;
+        // justify-content: center;
+        width: 11vw;
+        // font-weight: bold;
+    }
+}
+
+// ********************************************************************* 
+// FULL SCREEN 
+@media screen and (max-width: 1920px) {
+    .header {
+        @include flex(column, space-around);
+
+    }
+
+    .header__item {
+        @include flex(row, space-between);
+        margin: 2.4% 3% 0%;
+    }
+
+    .general {
+        @include flex(row, flex-end);
+        cursor: pointer;
+        margin-bottom: 0%;
+    }
+
+    .flexmenu {
+        cursor: pointer;
+    }
+
+    .general div {
+        margin: 1% 1%;
+    }
+
+    .header__letter,
+    .special__letter {
+        font-weight: bold;
+        font-size: 0.75rem;
+
+    }
+
+    .header__letter:hover {
+        background-color: $hover;
+        padding: 1%;
+        border-radius: 20%;
+        transition: .8s;
+        transform: scale(1);
+
+
+    }
+
+    .active {
+        background-color: $hover;
+        padding: 1%;
+        border-radius: 20%;
+    }
+
+    .header__telephone {
+        font-weight: bold;
+    }
+
+    .header__letter,
+    .special__letter,
+    .transparent,
+    .header__dots,
+    .header__telephone {
+        align-self: center;
+    }
+
+    .menu__item:hover {
+        color: $hover;
+        transition: .7s;
     }
 }
 
 
+@media screen and (max-width: 1440px) {
+    .header {
+        @include flex(column, space-around);
+
+    }
+
+    .header__item {
+        @include flex(row, space-between);
+        margin: 2.4% 3% 0%;
+    }
+
+    .general {
+        @include flex(row, flex-end);
+        cursor: pointer;
+        margin-bottom: 0%;
+    }
+
+    .flexmenu {
+        cursor: pointer;
+    }
+
+    .general div {
+        margin: 1% 1%;
+    }
+
+    .header__letter,
+    .special__letter {
+        font-weight: bold;
+        font-size: 0.75rem;
+
+    }
+
+    .header__letter:hover {
+        background-color: $hover;
+        padding: 1%;
+        border-radius: 20%;
+        transition: .8s;
+        transform: scale(1);
 
 
-// ********************************************************************* 
-// FULL SCREEN 
+    }
 
-.header {
-    @include flex(column, space-around);
+    .active {
+        background-color: $hover;
+        padding: 1%;
+        border-radius: 20%;
+    }
 
-}
+    .header__telephone {
+        font-weight: bold;
+    }
 
-.general {
-    margin-bottom: 0%;
-}
+    .header__letter,
+    .special__letter,
+    .transparent,
+    .header__dots,
+    .header__telephone {
+        align-self: center;
+    }
 
-.header__item {
-    @include flex(row, space-between);
-    margin: 2.4% 3% 0%;
-}
-
-.general {
-    @include flex(row, flex-end);
-    cursor: pointer;
-}
-
-.flexmenu {
-    cursor: pointer;
-}
-
-.general div {
-    margin: 1% 1%;
-}
-
-.letter,
-.special__letter {
-    font-weight: bold;
-    font-size: 0.75rem;
-
-}
-
-.letter:hover {
-    background-color: $hover;
-    padding: 1%;
-    border-radius: 20%;
-    transition: .8s;
-    transform: scale(1);
-
-
-}
-
-.active {
-    background-color: $hover;
-    padding: 1%;
-    border-radius: 20%;
-}
-
-.telephone {
-    font-weight: bold;
-}
-
-.letter,
-.special__letter,
-.transparent,
-.dots,
-.telephone {
-    align-self: center;
-}
-
-.menu__item:hover {
-    color: $hover;
-    transition: .7s;
+    .menu__item:hover {
+        color: $hover;
+        transition: .7s;
+    }
 }
 
 // ************************************************* 
 // SYMBOL AND HEADING AND BUTTON 
 
-
-.wrapper {
-    max-width: 100%;
-}
 
 .symbol {
     position: absolute;
@@ -218,24 +281,76 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
     .symbol {
         position: absolute;
-        left: 8%;
+        left: 35%;
     }
 
     .primary__heading {
         position: absolute;
-        top: 50%;
-        left: 33%;
+        top: 35%;
+        left: 42%;
+        font-size: 2rem;
 
     }
 
     .heading__button {
         position: absolute;
-        left: 50%;
-        top: 100%;
+        left: 53%;
+        top: 65%;
     }
+}
+
+@media screen and (max-width: 1440px) {
+    .symbol {
+        position: absolute;
+        left: 30%;
+    }
+
+    .primary__heading {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        font-size: 2.5rem;
+
+    }
+
+    .heading__button {
+        position: absolute;
+        left: 53%;
+        top: 95%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .symbol {
+        position: absolute;
+        left: 20%;
+    }
+
+    .primary__heading {
+        position: absolute;
+        top: 60%;
+        left: 28%;
+        font-size: 2.5rem;
+
+    }
+
+    .heading__button {
+        position: absolute;
+        left: 52%;
+        top: 115%;
+    }
+
+    // .menu__item {
+    //     // display: inline-flex;
+    //     // align-items: center;
+    //     // justify-content: center;
+    //     // width: 11vw;
+    //     // font-weight: bold;
+
+    // }
 }
 
 @media screen and (max-width: 768px) {
@@ -249,18 +364,20 @@ body {
 
     .primary__heading {
         position: absolute;
-        top: 43%;
-        left: 30%;
+        top: 52%;
+        left: 35%;
+        font-size: 1.8rem;
 
     }
 
     .heading__button {
         position: absolute;
         left: 60%;
-        top: 83%;
+        top: 100%;
     }
 
     .general {
+        display: flex;
         justify-content: flex-start;
     }
 
@@ -271,9 +388,8 @@ body {
         position: absolute;
         top: 0;
         left: 10%;
-        // align-items: center;
         width: 90%;
-        // margin: 0% 5%;
+
     }
 
     .none {
@@ -283,7 +399,7 @@ body {
     .primary__heading {
         position: absolute;
         top: 25%;
-        font-size: 1.9rem;
+        font-size: 2rem;
         margin: 0 auto;
     }
 
@@ -298,12 +414,12 @@ body {
         color: transparent;
     }
 
-    .dots {
+    .header__dots {
         display: none;
     }
 
-    .telephone {
-        width: 30%;
+    .header__telephone {
+        width: 35%;
 
     }
 

@@ -13,71 +13,97 @@
 
 <body>
 
-    <div class="top__content">
-        <header class="header">
-            <div class="header__item general">
-
-                <div class="letter">УК <a href="#"></a></div>
-                <div class="letter">РУС <a href="#"></a></div>
-                <div class="letter active">EN <a href="#"></a></div>
-
-                <div class="dots"><img src="img/Dot separator.svg" alt="Dot"></div>
-                <div class="transparent">Kyiv,
-                    Mechnikova str,
-                    14/1 </div>
-                <div class="dots"><img src="img/Dot separator.svg" alt="Dot"></div>
-
-                <div class="telephone">0800 211 927 </div>
-
-                <div class="dots"><img src="img/Dot separator.svg" alt="Dot"></div>
-                <div class="dots"><img src="img/facebook.svg" alt="Facebook icon"></div>
+    <header class="header">
+        <div class="header__item general">
+            <div class="header__letter">
+                <a class="link__item" href="#">
+                    УК
+                </a>
             </div>
-            <div class="header__item">
-                <div class="header__logo">
-                    <div>
-                        <img src="img/Logo.svg" alt="Company name">
-                    </div>
-                </div>
-                <nav class="flexmenu ">
-                    <div class="flex">
-                        <div class="menu__item">
-                            about us
-                            <a href="#"></a>
-                        </div>
-                        <div class="menu__item">
-                            services
-                            <a href="#"></a>
-                        </div>
-                        <div class="menu__item">
-                            team
-                            <a href="#"></a>
-                        </div>
-                        <div class="menu__item">
-                            publications
-                            <a href="#"></a>
-                        </div>
-                        <div class="menu__item">
-                            contact
-                            <a href="#"></a>
-                        </div>
-                        <div class="mobile-menu">
-                            <span class="menu-icon open">&#x2261;</span>
-                            <span class="menu-icon close">&#x2715;</span>
-                        </div>
-                    </div>
-                </nav>
+            <div class="header__letter">
+                <a class="link__item" href="#">
+                    РУС
+                </a>
             </div>
-        </header>
-        <div class="heading__container">
-            <img class="symbol" src="/img/Symbol.svg" alt="Symbol">
-            <h1 class="primary__heading">
-                you legal solutions provider
-            </h1>
-            <div class="heading__button">
-                <img src="img/button.svg" alt="Button">
+            <div class="header__letter active">
+                <a class="link__item" href="#">
+                    EN
+                </a>
+            </div>
+            <div class="header__dots">
+                <img src="img/Dot separator.svg" alt="Dot">
+            </div>
+            <div class="transparent">
+                Kyiv, Mechnikova str, 14/1
+            </div>
+            <div class="header__dots">
+                <img src="img/Dot separator.svg" alt="Dot">
+            </div>
+            <div class="header__telephone">
+                0800 211 927
+            </div>
+            <div class="header__dots">
+                <img src="img/Dot separator.svg" alt="Dot">
+            </div>
+            <div class="header__dots">
+                <img src="img/facebook.svg" alt="Facebook icon">
             </div>
         </div>
+        <div class="header__item">
+            <div class="header__logo">
+                <div>
+                    <img src="img/Logo.svg" alt="Company name">
+                </div>
+            </div>
+            <nav class="flexmenu ">
+                <div class="flex">
+                    <div class="menu__item">
+                        <a class="link__item" href="#">
+                            about us
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="link__item" href="#">
+                            services
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="link__item" href="#">
+                            team
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="link__item" href="#">
+                            publications
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="link__item" href="#">
+                            contact
+                        </a>
+                    </div>
+                    <div class="mobile-menu">
+                        <span class="menu-icon open">
+                            &#x2261;
+                        </span>
+                        <span class="menu-icon close">
+                            &#x2715;
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="heading__container">
+        <img class="symbol" src="/img/Symbol.svg" alt="Symbol">
+        <h1 class="primary__heading">
+            you legal solutions provider
+        </h1>
+        <div class="heading__button">
+            <a href="#scroll"> <img src="img/button.svg" alt="Button"></a>
+        </div>
     </div>
+
     <!-- **************************************************************************  -->
     <!-- MAIN  -->
 
@@ -86,20 +112,27 @@
             <div class="main__menu">
                 <ul>
                     <li class="main__item special">
-                        Consistent
-                        <a href="#"></a>
+                        <a class="link__item" href="#">
+                            Consistent
+                        </a>
                     </li>
                     <li class="main__item hover">
-                        Customer <span class="none"> oriented</span>
-                        <a href="#"></a>
+                        <a class="link__item" href="#">
+                            Customer
+                            <span class="none--special">
+                                oriented
+                            </span>
+                        </a>
                     </li>
                     <li class="none">
-                        Innovative
-                        <a href="#"></a>
+                        <a class="link__item" href="#">
+                            Innovative
+                        </a>
                     </li>
                     <li class="none">
-                        Business oriented
-                        <a href="#"></a>
+                        <a class="link__item" href="#">
+                            Business oriented
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -115,7 +148,9 @@
             </div>
         </div>
         <div class="main__item--secondary hover">
-            Services
+            <a class="link__item" href="#">
+                Services
+            </a>
             <img src="img/blue_arrow.svg" alt="Arrow">
         </div>
         <h2 class="main__heading--special">
@@ -205,6 +240,8 @@
             </div>
         </div>
 
+        <!-- ********************************************************************************************************************************  -->
+        <!-- SLIDER  -->
 
         <div class="container">
             <div class="slider">
@@ -217,7 +254,7 @@
                 <div class="slide" id="slide-1">
                     <img src="/img/man.svg" alt="man">
                     <div class="caption">
-                        <div class="caption__item--hover hover">
+                        <div class="caption__item--hover hover" id="scroll">
                             команда
                             <img src="img/blue_arrow.svg" alt="Arrow">
                         </div>
@@ -239,7 +276,9 @@
                     <img src="/img/man.svg" alt="man">
                     <div class="caption">
                         <div class="caption__item--hover hover">
-                            команда
+                            <a class="link__item" href="#">
+                                команда
+                            </a>
                             <img src="img/blue_arrow.svg" alt="Arrow">
                         </div>
                         <p>
@@ -293,6 +332,8 @@
 
 
     </main>
+    <!-- ************************************************************************************************
+ANOTHER BLOCK -->
 
     <div class="logo">
         <h3 class="logo__heading"> They already trust us</h3>
@@ -335,18 +376,64 @@
 
     </div>
 
-    <div>
+    <!-- *************************************************************************************************************************************  -->
+
+    <div class="secondary__content--wrapper">
         <div class="caption__item--hover hover">
             команда
             <img src="img/blue_arrow.svg" alt="Arrow">
         </div>
         <h2>We have something to tell</h2>
+        <div class="secondary__content">
+            <div class="secondary__content--item">
+                <img class="secondary__content--img" src="img/Cover1.svg" alt="iPads">
+                <h3 class="secondary__content--heading">
+                    Equity associate
+                </h3>
+                <h4 class="secondary__content--date">
+                    April 22
+                </h4>
+                <p class="secondary__content--text">
+                    I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents
+                    told
+                    me that if I…
+                </p>
+            </div>
+            <div class="secondary__content--item">
+                <img class="secondary__content--img" src="img/Cover2.svg" alt="Flag">
+                <h3 class="secondary__content--heading">
+                    Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                </h3>
+                <h4 class="secondary__content--date">
+                    September 29
+                </h4>
+                <p class="secondary__content--text">
+                    And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January
+                    21
+                    National Commission for Data Protection.
+                </p>
+            </div>
+            <div class="secondary__content--item">
+                <img class="secondary__content--img" src="img/Cover3.svg" alt="People">
+                <h3 class="secondary__content--heading">
+                    Millennial Testament
+                </h3>
+                <h4 class="secondary__content--date">
+                    August 19
+                </h4>
+                <p class="secondary__content--text">
+                    What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy
+                    of
+                    the Ukrainian generation X looks like this: an apartment in…
+                </p>
+            </div>
 
+        </div>
 
     </div>
 
 
-
+    <!-- *****************************************************************************************************************  -->
 
     <script>
         function main() {
