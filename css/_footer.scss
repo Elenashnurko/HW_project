@@ -1,0 +1,158 @@
+// FOOTER .footer {
+//     position: absolute;
+//     top: 600%;
+//     color: black;
+//     background-color: $secondary-background;
+//     @include flex(column, flex-start);
+//     width: 100%;
+//     padding: 0% 3%;
+// }
+
+// .footer__top,
+// .footer__bottom {
+//     @include flex(row, flex-start);
+//     width: 100%;
+//     padding: 1% 0%;
+//     align-items: center;
+// }
+
+// .flexstart {
+//     @include flex(row, flex-start);
+//     width: 30%;
+// }
+
+// .flexend {
+//     width: 70%;
+//     @include flex(row, flex-end);
+// }
+
+// .flexstart__item,
+// .footer__bottom--item {
+//     padding: 0% 1%;
+// }
+
+// .bold {
+//     font-size: 0.875rem;
+//     color: $content_heading;
+//     font-weight: bold;
+// }
+
+@media screen and (max-width: 1920px) {
+    .footer {
+        position: absolute;
+        top: 450%;
+        color: black;
+        background-color: $secondary-background;
+        @include flex(row, flex-start);
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0% 3%
+    }
+
+    .footer__top,
+    .footer__bottom,
+    .flexend {
+        @include flex(row, flex-start);
+        padding: 1% 0%;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer__top {
+        width: 30%;
+    }
+
+    .flexend {
+        width: 70%;
+        @include flex(row, flex-end);
+    }
+
+    .footer__top--item,
+    .footer__bottom--item {
+        padding: 0% 1%;
+    }
+
+
+    .bold {
+        font-size: 0.875rem;
+        color: $secondary-heading;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .footer {
+        top: 560%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        top: 575%;
+    }
+
+    .footer__top {
+        width: 40%;
+    }
+
+    .flexend {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        top: 817%;
+    }
+
+    .flexstart {
+
+        width: 40%;
+    }
+
+    .flexend {
+        width: 60%;
+
+    }
+
+    .footer__top--item,
+    .footer__bottom--item,
+    .flexend {
+        padding: 0% 2%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+
+    .footer {
+        @include flex(column, space-around);
+        top: 986%;
+    }
+
+    .footer__dots {
+        display: none;
+    }
+
+    .footer__top,
+    .flexend,
+    .footer__bottom {
+        @include flex(column, center);
+        width: 100%;
+        align-items: center;
+        padding: 3% 0%;
+    }
+
+    .footer__top--item,
+    .footer__bottom--item {
+        padding: 3% 0%;
+    }
+
+    .footer__dots {
+        padding: 3% 0%;
+    }
+
+    .flexend {
+        order: 2;
+    }
+}
